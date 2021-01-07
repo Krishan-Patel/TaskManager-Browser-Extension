@@ -96,6 +96,7 @@ class Tasks {
             if (this.input.style.display === 'none') {
                 this.input.style.display = 'block';
                 task_name.style.display = 'none';
+                this.input.value = this.name;
                 this.input.focus()
             } else {
                 this.name = this.input.value;
@@ -176,7 +177,7 @@ class Tasks {
 submitButton.addEventListener('click', (e) => {
     if (input.value !== '') {
         let date = new Date();
-        new Tasks(input.value, false, '20' + date.getMonth().toString() + date.getFullYear().toString());
+        new Tasks(input.value, false, date.getDate().toString() + date.getMonth().toString() + date.getFullYear().toString());
         UpdateCounts();
     }
 })

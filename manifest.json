@@ -7,8 +7,5 @@
     "default_popup": "to-do_list.html",
     "default_icon": "Images/Logo.png"
     },
-    "background": {
-      "scripts": ["background.js"]
-    },
     "manifest_version": 2
   }

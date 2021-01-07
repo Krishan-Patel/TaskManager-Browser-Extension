@@ -30,14 +30,14 @@ p{
 
 .creating_tasks{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 3vh;
+    margin: 0 2vw 5vh 5vw;
 }
 .submission{ 
-    margin-left: 11vw;
-    margin-right: 11vw;
-}
+    flex: 1;
+    margin-right: 5%;
+}  
 
 .task{ 
     display: flex;
@@ -74,4 +74,19 @@ input[type=radio] {
 .edit-task{ 
     margin-left: 5%;
     width: 60%;
+}
+
+
+.uiBtn{ 
+    border-radius: 30px;
+    height: 30px;
+    width: 80px;
+    background-color: rgb(55, 78, 209);
+    color: white;
+    margin-left: 1.5vw;
+}
+
+.task-input { 
+    width: 100%;
+    border-radius: 10px;
 }
