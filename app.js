@@ -15,7 +15,6 @@ function UpdateCounts() {
 }
 function updateStorage() {
     chrome.storage.sync.set({ 'tasks': tasksArray })
-    console.log('storage updated') // *
 }
 
 class Tasks {
@@ -194,9 +193,7 @@ window.addEventListener('keyup', (e) => {
 })
 
 window.addEventListener('load', () => {
-    console.log('loading working')
     chrome.storage.sync.get('tasks', (data) => {
-        console.log(data)
         if (data.tasks) {
             let date = new Date()
             date = date.getDate().toString() + date.getMonth().toString() + date.getFullYear().toString();
